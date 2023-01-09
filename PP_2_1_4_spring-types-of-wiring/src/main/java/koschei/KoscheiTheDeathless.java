@@ -2,9 +2,12 @@ package koschei;
 
 import koschei.models.Ocean1;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("kosheiBean")
+@Scope("singleton")
+//@Scope("prototype")
 public class KoscheiTheDeathless {
 
     private Ocean1 ocean;
